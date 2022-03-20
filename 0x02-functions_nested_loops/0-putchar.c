@@ -11,20 +11,20 @@
 
 int main(void)
 {
-	printChars();
+	printChars("_putchar");
 	_putchar('\n');
 	return (0);
 }
 
 /**
- * Printchars - Loops through a string and prints each character
+ * printChars - Loops through a string and prints each character
  *
  * Return: 0 on success
+ *
+ * @letters: string to be printed
  */
-
-int printChars(void)
+int printChars(char letters[])
 {
-	char letters[] = "_putchar";
 	unsigned long int pos = 0;
 
 	while (pos < strlen(letters))

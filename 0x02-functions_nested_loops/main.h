@@ -1,2 +1,2 @@
 int _putchar(char c);
-int printChars();
+int printChars(char letters[]);
