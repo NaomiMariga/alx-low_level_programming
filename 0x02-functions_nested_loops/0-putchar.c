@@ -16,6 +16,12 @@ int main(void)
 	return (0);
 }
 
+/**
+ * Printchars - Loops through a string and prints each character
+ *
+ * Return: 0 on success
+ */
+
 int printChars(void)
 {
 	char letters[] = "_putchar";
