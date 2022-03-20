@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
- * jackbauer - prints minutes of the day
+/**
+ * jack_bauer - prints minutes of the day
  */
 void jack_bauer(void)
 {
@@ -13,7 +13,7 @@ void jack_bauer(void)
 	for (hour = 0; hour <= 2; hour++)
 	{
 		for (hours = 0; hours <= 3; hours++)
-		{	
+		{
 			for (min = 0; min <= 5; min++)
 			{
 				for (mins = 0; mins <= 9; mins++)
@@ -26,7 +26,6 @@ void jack_bauer(void)
 					_putchar('\n');
 				}
 			}
-	       }
+		}
 	}
-	       			       
 }
