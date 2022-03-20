@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print-sign - print signs if given conditions are met
+ * print_sign - print signs if given conditions are met
  *
  * Return: 1 if true and 0 if false
  *
