@@ -14,28 +14,24 @@ void print_to_98(int n)
 		count = n;
 		while (count > 98)
 		{
-			_putchar('0' + count);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", count);
 			count--;
 		}	
-	 	_putchar('\n');	
+	 	printf("\n");	
 	}
 	else if (n < 98)
 	{
 		count = n;
 		while (count < 98)
 		{
-			_putchar('0' + count);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", count);
 			count++;
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 	else
 	{
-		_putchar('0' + n);
-		_putchar('\n');
+		printf("%d", n);
+		printf("\n");
 	}	
 }
