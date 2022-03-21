@@ -7,7 +7,7 @@
  */
 void print_rev(char *s)
 {
-	unsigned long int index;
+	int index;
 	char letter;
 
 	for (index = (strlen(s) - 1); index >= 0; index--)
