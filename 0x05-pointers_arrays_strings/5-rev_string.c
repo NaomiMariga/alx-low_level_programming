@@ -16,5 +16,5 @@ void rev_string(char *s)
 		letter = s[index];
 		putchar(letter);
 	}
-	memset(s, 0, 10);
+	*s = '\0';
 }
