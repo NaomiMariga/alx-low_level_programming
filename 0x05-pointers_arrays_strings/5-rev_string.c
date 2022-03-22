@@ -16,5 +16,6 @@ void rev_string(char *s)
 		letter = s[index];
 		putchar(letter);
 	}
+	*s = '\0';
 	putchar('\n');
 }
