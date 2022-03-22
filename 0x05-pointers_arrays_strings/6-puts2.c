@@ -10,7 +10,7 @@ void puts2(char *str)
 	unsigned long int index;
 	char letter;
 
-	for (index = 0; index < strlen(str); index + 2)
+	for (index = 0; index < strlen(str); index += 2)
 	{
 		letter = str[index];
 		_putchar(letter);
