@@ -14,7 +14,6 @@ char *_strncpy(char *dest, char *src, int n)
 	char letter;
 	int index;
 
-	memset(dest, '\0', sizeof(dest));
 	for (index = 0; index < n; index++)
 	{
 		letter = src[index];
