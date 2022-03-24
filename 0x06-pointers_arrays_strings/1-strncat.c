@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 	unsigned long int dest_len;
 
 	dest_len = strlen(dest);
-	for (index = 0; index < n; index++)
+	for (index = 0; index < n && src[index] != '\0'; index++)
 	{
 		letter = src[index];
 		dest[dest_len] = letter;
