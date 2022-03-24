@@ -13,6 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 	char *ptr;
 	char letter;
 	int index;
+	*dest = '\0';
 
 	for (index = 0; index < n; index++)
 	{
