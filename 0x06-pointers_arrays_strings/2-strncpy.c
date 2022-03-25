@@ -13,7 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 	char letter;
 	int index;
 
-	for (index = 0; src[index] != '\0' && index < n; index++)
+	for (index = 0; src[index] != '\0' && index < n; ++index)
 	{
 		letter = src[index];
 		dest[index] = letter;
