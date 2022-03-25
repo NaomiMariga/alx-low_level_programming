@@ -15,7 +15,7 @@ int _strcmp(char *s1, char *s2)
 
 	for (index = 0; s[index] != '\0' || s2[index] != '\0'; index++)
 	{
-		s1_letter = si[index];
+		s1_letter = s1[index];
 		s2_letter = s2[index];
 
 		if (s1_letter != s2_letter)
