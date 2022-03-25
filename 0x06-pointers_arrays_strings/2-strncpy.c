@@ -22,7 +22,7 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 		else
 		{
-			dest ='\0';
+			*dest ='\0';
 		}
 	}
 	for (index = n; strlen(dest) > strlen(src) && index > n; index++)
