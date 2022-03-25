@@ -13,10 +13,17 @@ char *_strncpy(char *dest, char *src, int n)
 	char letter;
 	int index;
 
-	for (index = 0; index < n; index++)
-	{
-		letter = src[index];
-		dest[index] = letter;
+	for (index = 0; index <; index++)
+	{	
+		if (strlen(src) >= 1)
+		{
+			letter = src[index];
+			dest[index] = letter;
+		}
+		else
+		{
+			dest ='\0';
+		}
 	}
 	for (index = n; strlen(dest) > strlen(src) && index > n; index++)
 	{
