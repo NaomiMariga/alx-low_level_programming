@@ -14,13 +14,33 @@ void reverse_array(int *a, int n)
 	for (index = n - 1; index >= 0; index--)
 	{
 		num = a[index];
-		if (index != 0)
+		if (num < 10)
 		{
-			printf("%d, ", num);
+			if (index != 0)
+			{
+				_putchar(num + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(num + '0');
+			}
 		}
 		else
 		{
-			printf("%d", num);
+			if (num != 0)
+			{
+				_putchar((num / 10) + '0');
+				_putchar((num % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar((num / 10) + '0');
+				_putchar((num % 10) + '0');
+			}
 		}
 	}
 }
