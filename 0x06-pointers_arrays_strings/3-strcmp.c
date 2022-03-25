@@ -13,7 +13,7 @@ int _strcmp(char *s1, char *s2)
 	char s2_letter;
 	int difference;
 
-	for (index = 0; index < strlen(s1) || index < strlen(s2); index++)
+	for (index = 0; s[index] != '\0' || s2[index] != '\0'; index++)
 	{
 		s1_letter = si[index];
 		s2_letter = s2[index];
