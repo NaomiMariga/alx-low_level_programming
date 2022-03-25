@@ -13,8 +13,8 @@ char *_strncpy(char *dest, char *src, int n)
 	char letter;
 	int index;
 
-	for (index = 0; index <; index++)
-	{	
+	for (index = 0; index < n; index++)
+	{
 		if (strlen(src) >= 1)
 		{
 			letter = src[index];
@@ -22,7 +22,7 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 		else
 		{
-			*dest ='\0';
+			dest = '\0';
 		}
 	}
 	for (index = n; strlen(dest) > strlen(src) && index > n; index++)
