@@ -10,7 +10,6 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ptr;
 	char letter;
 	int index;
 
@@ -19,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 		letter = src[index];
 		dest[index] = letter;
 	}
-	for (index; index > n; index++)
+	for (index = n; strlen(dest) > strlen(src) && index > n; index++)
 	{
 		dest[index] = 0;
 	}
