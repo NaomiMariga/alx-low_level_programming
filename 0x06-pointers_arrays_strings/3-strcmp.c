@@ -8,12 +8,12 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	unsigned long int index;
+	int index;
 	char s1_letter;
 	char s2_letter;
 
 
-	for (index = 0; s[index] != '\0' || s2[index] != '\0'; index++)
+	for (index = 0; s1[index] != '\0' || s2[index] != '\0'; index++)
 	{
 		s1_letter = s1[index];
 		s2_letter = s2[index];
