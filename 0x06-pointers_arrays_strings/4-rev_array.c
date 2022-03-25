@@ -16,12 +16,12 @@ void reverse_array(int *a, int n)
 		num = a[index];
 		if (num < 10)
 		{
-			_putchar(num + '0');
+			putchar(num + '0');
 		}
 		else
 		{
-			_putchar((num / 10) + '0');
-			_putchar((num % 10) + '0');
+			putchar((num / 10) + '0');
+			putchar((num % 10) + '0');
 		}
 	}
 }
