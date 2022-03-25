@@ -11,7 +11,7 @@ int _strcmp(char *s1, char *s2)
 	unsigned long int index;
 	char s1_letter;
 	char s2_letter;
-	int difference;
+
 
 	for (index = 0; s[index] != '\0' || s2[index] != '\0'; index++)
 	{
@@ -20,12 +20,8 @@ int _strcmp(char *s1, char *s2)
 
 		if (s1_letter != s2_letter)
 		{
-			difference = s1_letter - s2_letter;
-		}
-		else
-		{
-			difference = s1_letter - s2_letter;
+			return (s1_letter - s2_letter);
 		}
 	}
-	return (difference);
+	return (0);
 }
