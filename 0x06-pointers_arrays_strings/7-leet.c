@@ -9,31 +9,20 @@
 char *leet(char *s)
 {
 	unsigned long int index;
-	char letter;
+	char letters[] = "AaEeOoTtLl";
+	char numbers[] = "4433007711";
+	unsigned long int i;
 
-	for (index = 0; index < strlen(s) && s[index] != '\0'; index++)
+	for (index = 0; index < strlen(s); index++)
 	{
-		letter = s[index];
-		if (letter == 'a' || letter == 'A')
+		for (i = 0; i < strlen(letters); i++)
 		{
-			s[index] = '4';
+			if (s[index] == letters[i])
+			{
+				s[index] = numbers[i];
+			}
 		}
-		else if (letter == 'e' || letter == 'E')
-		{
-			s[index] = '3';
-		}
-		else if (letter == 'o' || letter == 'O')
-		{
-			s[index] = '0';
-		}
-		else if (letter == 't' || letter == 'T')
-		{
-			s[index] = '7';
-		}
-		else if (letter == 'l' || letter == 'L')
-		{
-			s[index] = '1';
-		}
+		
 	}
 	return (s);
 }
