@@ -11,7 +11,7 @@ char *leet(char *s)
 	unsigned long int index;
 	char letter;
 
-	for (index = 0; index < strlen(s); index++)
+	for (index = 0; index < strlen(s) && s[index] != '\0'; index++)
 	{
 		letter = s[index];
 		if (letter == 'a' || letter == 'A')
