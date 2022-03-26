@@ -21,7 +21,7 @@ char *leet(char *s)
 			{
 				s[index] = numbers[i];
 			}
-		}	
+		}
 	}
 	return (s);
 }
