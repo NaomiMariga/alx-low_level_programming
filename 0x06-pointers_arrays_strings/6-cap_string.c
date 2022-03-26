@@ -12,7 +12,16 @@ char *cap_string(char *s)
 	unsigned long int index;
 	char letter;
 	int cases;
+	char first_letter;
 
+	first_letter = s[0];
+	cases = first_letter;
+	if (cases >= 97 && cases <= 122)
+	{
+		cases -= 32;
+		first_letter = cases;
+		s[0] = first_letter;
+	}
 	for (index = 0; index < strlen(s); index++)
 	{
 		letter = s[index];
