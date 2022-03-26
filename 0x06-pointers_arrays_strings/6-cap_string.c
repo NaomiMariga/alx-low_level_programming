@@ -17,8 +17,9 @@ char *cap_string(char *s)
 	{
 		letter = s[index];
 		if (letter == ' ' || letter == ',' || letter == ';' || letter == '.' ||
-		letter == '!' || letter == '"' || letter == '(' || letter == ')'
-		|| letter == '{' || letter == '}' || letter == '\n' || letter == '\t')
+		letter == '!' || letter == '?' || letter == '"' || letter == '(' ||
+		letter == ')' || letter == '{' || letter == '}' || letter == '\n' ||
+		letter == '\t')
 		{
 			cases = s[index + 1];
 			if (cases >= 97 && cases <= 122)
