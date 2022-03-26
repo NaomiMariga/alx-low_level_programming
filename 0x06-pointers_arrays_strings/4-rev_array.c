@@ -10,18 +10,13 @@ void reverse_array(int *a, int n)
 {
 	int index;
 	int num;
+	int *temp_hoder;
+	int i;
 
-	for (index = n - 1; index >= 0; index--)
+	temp_holder[] = a;
+	for (index = n - 1 && i = 0; index >= 0 && i > n; index-- && i++)
 	{
-		num = a[index];
-		if (num < 10)
-		{
-			putchar(num + '0');
-		}
-		else
-		{
-			putchar((num / 10) + '0');
-			putchar((num % 10) + '0');
-		}
+		num = temp_holder[index];
+		a[i] = num;
 	}
 }
