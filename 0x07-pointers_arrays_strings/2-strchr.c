@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stddef.h>
 
 /**
  * _strchr - gets first occurence of given character
@@ -11,7 +12,6 @@
 char *_strchr(char *s, char c)
 {
 	unsigned long int i;
-	char *nul = NULL;
 
 	for (i = 0; i < strlen(s); i++)
 	{
@@ -20,5 +20,5 @@ char *_strchr(char *s, char c)
 			return ((s + i));
 		}
 	}
-	return (nul);
+	return (NULL);
 }
