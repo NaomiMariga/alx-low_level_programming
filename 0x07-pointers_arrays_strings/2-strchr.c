@@ -11,6 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	unsigned long int i;
+	char *nul = NULL;
 
 	for (i = 0; i < strlen(s); i++)
 	{
@@ -18,7 +19,6 @@ char *_strchr(char *s, char c)
 		{
 			return ((s + i));
 		}
-
 	}
-	return (NULL);
+	return (nul);
 }
