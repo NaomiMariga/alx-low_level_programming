@@ -17,23 +17,24 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
+	else if (s1 == NULL)
+	{
+		return (s2);
+	}
+	else if (s2 == NULL)
+	{
+		return (s1);
+	}
 	i = 0;
 	j = 0;
 	while (s1[i] != '\0')
-	{
 		i++;
-	}
-
 	while (s2[j] != '\0')
-	{
 		j++;
-	}
 	l = i + j;
 	str = malloc(sizeof(*s1) * l + 1);
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 	k = 0;
 	while (s1[k] != '\0')
 	{
